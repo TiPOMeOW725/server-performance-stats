@@ -28,4 +28,6 @@ echo "Total disk size: ${total_disk}     Used:${used_disk_percentage}%    Free:$
 echo "Used space: $used_disk"
 echo "Free space: $free_disk"
 
-printf "\n\n"
+printf "\n---\n\n"
+
+ps -eo pid,user,%cpu,comm,time --sort=-%cpu | head -n 6
