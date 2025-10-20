@@ -31,3 +31,7 @@ echo "Free space: $free_disk"
 printf "\n---\n\n"
 
 ps -eo pid,user,%cpu,comm,time --sort=-%cpu | head -n 6
+
+printf "\n---\n\n"
+
+ps -eo pid,user,%mem,comm,time --sort=-%mem | head -n 6
