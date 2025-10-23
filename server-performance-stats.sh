@@ -1,16 +1,11 @@
-<<<<<<< HEAD
-=======
 printf "\n\n"
->>>>>>> e97280c (Improve output readability)
+
 
 cpu_usage=$(top -bn1 | awk '/%Cpu/ {print 100 - $8}')
 echo "CPU usage: ${cpu_usage}%"
 
-<<<<<<< HEAD
-=======
 printf "\n---\n\n"
 
->>>>>>> e97280c (Improve output readability)
 free_mem=$(free -m | awk '/Mem:/ {print $4}')
 used_mem=$(free -m | awk '/Mem:/ {print $3}')
 total_mem=$(free -m | awk '/Mem:/ {print $2}')
